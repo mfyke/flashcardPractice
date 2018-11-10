@@ -1,6 +1,6 @@
-var letter = function() {
+var letter = function(character) {
 	//string to store underlying character
-	this.uChar = "";
+	this.uChar = character;
 	//boolean that stores if it has been guessed before
 	this.guessed = false;
 	//display character if guessed correctly or placeholder if has not been guessed

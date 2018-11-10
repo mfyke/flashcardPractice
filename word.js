@@ -5,9 +5,10 @@ var word = function(currentWord) {
 	this.currentWord=currentWord;
 	this.letters = [];
 	this.createLetters = function() {
-		for (var i = 0; i<currentWord.length; i++) {
-			this.letters += new letter(currentWord.charAt(i));
+		for (var i = 0; i<this.currentWord.length; i++) {
+			this.letters.push(currentWord.charAt(i));
 		}
+		// console.log(this.letters);
 	}
 	//function that returns string that is the word call the letter function and return the letters or underscores and concatinate them together
 	this.wordReturn = function() {

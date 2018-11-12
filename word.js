@@ -6,7 +6,7 @@ var word = function(currentWord) {
 	this.letters = [];
 	this.createLetters = function() {
 		for (var i = 0; i<this.currentWord.length; i++) {
-			this.letters.push(currentWord.charAt(i));
+			this.letters.push(new letter(currentWord.charAt(i)));
 		}
 		// console.log(this.letters);
 	}

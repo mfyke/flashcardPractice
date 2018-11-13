@@ -14,14 +14,14 @@ var word = function(currentWord) {
 	this.wordReturn = function() {
 		var wordProgress = "";
 		for(var i = 0; i < this.letters.length; i++) {
-			wordProgress += letters[i].display();
+			wordProgress += this.letters[i].display();
 		}
-		console.log(wordProgress);
+		return wordProgress;
 	}
 	//function that takes in character as an argument and calls the guess function from the letter object
 	this.checkLetter = function(character) {
 		for(var i = 0; i < this.letters.length; i++) {
-			this.letters[i].check;
+			this.letters[i].check(character);
 		}
 	}
 }
